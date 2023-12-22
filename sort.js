@@ -31,3 +31,18 @@ function sortGrades(lst) {
     let result = sortedArr.join("");
     return parseInt(result);
   };
+
+  /**
+ * Given a perfect square, returns the next perfect square.
+ *
+ * @param {number} num - A perfect square.
+ * @returns {number} The next perfect square following the input number.
+*/
+const findNextSquare = num => {
+  let sqrt = Math.sqrt(num);
+  if(sqrt === Math.round(sqrt)){
+    return (sqrt + 1)**2;
+  }
+ return -1
+  
+};
